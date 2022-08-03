@@ -129,6 +129,14 @@ function ForceGraph({
         d3.select(this).attr('cursor','default')
       });
 
+      // var labels = node.append('text')
+      // .text(function(d){
+      //   return d.id;
+      // })
+      // .attr('color','white')
+      // .attr('font-size',168)
+      // .attr('x',6)
+      // .attr('y',3);
 
 
   // Change some appereances parameters
