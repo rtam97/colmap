@@ -1,0 +1,48 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- d3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- AJAX Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>CitationMap</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="inputname">
+        <input id="authorname" type="text" placeholder='Semantic Scholar ID'>
+        <button id="gobutton" type="button" onclick="searchAuthor();">Find Author</button>
+      </div>
+      <div class="authorlist" id='authlist'>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="toggle" onclick="toggleSideBar();">
+    </div>
+    <div id="main">
+
+
+      <input class="zoomvalue" type="number" placeholder="1">
+      <button class="zoombutton" id="zoominbutton" type="button" name="zoomin" onclick="drawGraph();">Zoom</button>
+
+      <div id="graph">
+        <h3 id="authname"></h3>
+        <!-- Here the FORCE-DIRECTED GRAPH SVG element is appended when a pathway is visualized -->
+      </div>
+
+    </div>
+
+
+    <script src="makeGraph.js"></script>
+    <script src="makeRequest.js"></script>
+
+  </body>
+</html>
